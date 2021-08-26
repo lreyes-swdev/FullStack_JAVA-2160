@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Clase 3</title>
+    <style>
+        li {
+            display: inline;
+            border: 5px solid black;
+            padding: 5px;
+        }
+
+        body {
+            background-color: aquamarine;
+        }
+
+        h1 {
+            background-color: blue;
+            border: 5px dotted black;
+            padding: 20px;
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Mi página Web</h1>
+        <ul>
+            <li><a href="#_video">Ir a videos</a></li>
+            <li><a href="#_formulario">Ir a formularios</a></li>
+            <li><a href="#_galeria">Ir a Galeria</a></li>
+            <li><a href="#_descargas">Ir a Descargas</a></li>
+        </ul>
+    </div>
+
+    <div id="_descargas">
+        <h3>Descargar PDF</h3>
+        <a href="pdf/Test.pdf" target="_blank" download>Test de Conocimiento</a>
+    </div>
+
+    <div id="_formulario">
+        <h3>Formulario</h3>
+        <!--El método GET mostrará los campos del formulario en la barra de direcciones, MENOR SEGURIDAD-->
+        <form action="paginas/pagina2.html" method="get">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre">
+            <label for="password">Contraseña</label>
+            <input type="password" name="password" id="password">
+            <input type="submit" value="Entrar">
+        </form>
+        <!--El método POST no muestra los campos del formulario en la barra de direcciones, MAYOR SEGURIDAD-->
+        <form action="paginas/pagina2.html" method="post">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre">
+            <label for="password">Contraseña</label>
+            <input type="password" name="password" id="password">
+            <input type="submit" value="Entrar">
+            <!--input type="button" value="Entrar" onclick="alert('Hola');"-->
+        </form>
+
+        <h3>Tipos de Input</h3>
+        <form action="paginas/pagina2.html" method="get">
+            <label for="radio">Opcion 1</label>
+            <input type="radio" name="radio" id="radio">
+            <label for="radio">Opcion 2</label>
+            <input type="radio" name="radio" id="radio">
+            <label for="radio">Opcion 3</label>
+            <input type="radio" name="radio" id="radio">
+            <br>
+            <select>
+                <option>Value 1</option>
+                <option>Value 2</option>
+                <option>Value 3</option>
+            </select>
+            <br>
+            <label for="">Lista de Opciones</label>
+            <label for="">Opcion 2</label>
+            <input type="checkbox" name="" id="">
+            <label for="checkbox">Opcion 2</label>
+            <input type="checkbox" name="" id="">
+            <label for="checkbox">Opcion 3</label>
+            <input type="checkbox" name="" id="">
+            <br>
+            <input type="submit" value="Entrar">
+        </form>
+    </div>
+
+    <div id="_video">
+        <h2>Video de Youtube</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/u2ge-QahA6E" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+        <video src="vid/chill.mp4" width="560" controls></video>
+
+        <p>Lorem, <b><i>ipsum dolor sit amet</i></b> consectetur adipisicing elit. Eius id, numquam quo at, tenetur
+            quisquam mollitia voluptatem doloribus ratione voluptate quaerat obcaecati quam unde incidunt nulla libero
+            nam atque odit?</p>
+
+        <div id="_galeria">
+            <h2>Ruta Absoluta</h2>
+            <img src="https://pbs.twimg.com/profile_images/1325796914911174656/8R84wZlR.jpg" alt="Perro Indio"
+                style="width:200px;">
+
+            <h2>Ruta Relativa</h2>
+            <img src="img/isologo1.jpg" alt="Perro Indio" style="width:200px;">
+        </div>
+    </div>
+</body>
+
+</html>
