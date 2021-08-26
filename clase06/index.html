@@ -10,8 +10,57 @@
 
 <body>
     <p><a href="quince/index.html">Quince</a></p>
+    <p><a href="codoacodocomision2160/index.html">Resultado final de la Clase 6</a></p>
     <h2>Git</h2>
+    <pre>
+#
+# Fork
+# Fork your own copy of <repository> to your account
+# Entramos al repositorio:  https://github.com/luisNavasArg/quince.git
+# Botón "Fork" arriba a la derecha
+# Ahora tenemos una copia del repositorio: lreyes-swdev/quince
+# Botón "Code" para obtener nuestro Link:  https://github.com/lreyes-swdev/quince.git
+#
 
+# En este caso, genero un directorio para mantener los distintos repositorios
+# Luego por trazabiliad, copio el repositorio en la carpeta de la clase: "<...>\meet.google.com\clase 06"
+cd "C:\workspace\Repositorios"
+# Clono el repositorio
+git clone https://github.com/lreyes-swdev/quince.git
+
+# Durante la clase trabajo en el repositorio clonado      /lreyes-swdev/quince.git
+# Al finalizar la clase actualizo el repositorio general  /lreyes-swdev/FullStack_JAVA-2160.git
+
+# Luego modificar los archivos del git clone
+cd "C:\workspace\Repositorios\quince"
+git status
+git add *
+git commit -m "agregado -clone-"
+git push -u origin master
+
+# Otro Fork para que el profe pueda ir monitoreando nuestro trabajo
+# Repositorio:  https://github.com/luisNavasArg/codoacodocomision2160.git
+cd "C:\workspace\Repositorios"
+# Clono el repositorio
+git clone https://github.com/lreyes-swdev/codoacodocomision2160.git
+
+# Durante la clase trabajo en el repositorio clonado      /lreyes-swdev/codoacodocomision2160.git
+# Al finalizar la clase actualizo el repositorio general  /lreyes-swdev/FullStack_JAVA-2160.git
+
+# Luego modificar los archivos del git clone
+cd "C:\workspace\Repositorios\codoacodocomision2160"
+git status
+git add *
+git commit -m "Restauro al final Clase 6"
+git push -u origin master
+
+# Al finalizar la clase...
+cd "C:\workspace\FullStack_JAVA#2160"
+git status
+git add *
+git commit -m "Fin Clase 6"
+git push -u origin master
+    </pre>
 </body>
 
 </html>
