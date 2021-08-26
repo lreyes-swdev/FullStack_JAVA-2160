@@ -13,10 +13,10 @@
     <pre>
 Instalar Git  |  Software de control de versiones.
     https://git-scm.com/        Git-2.33.0-64-bit.exe
-    
+
 Crear una cuentra en Github  |   Servicio de alojamiento de repositorios que se utiliza con el software de control de versiones Git.
     https://github.com/
-    
+
 Git Bash en VS Code
     VS Code >> Terminal >> New Terminal
         Abre el terminal integrado de Windows (Power Sheel)
@@ -27,52 +27,63 @@ Git Bash en VS Code
 #Consultar versión de git instalada
 git --version
 
-# Iniciar workspace
-# - Se creará una carpeta .git en el workspace de VSCode
-git init
-
-# Agregar todos los archivos del workspace para control de versión
-git add *
-
-# Ver los estados de los archivos
-git status
-
 # Configurar identidad de Autor: user.name + user.email
 git config --global user.email "lreyes.swdev@gmail.com"
 git config --global user.name "lreyes-swdev"
 
+# Iniciar workspace
+# - Se creará una carpeta .git en el workspace de VSCode
+git init
+# Agregar todos los archivos del workspace para control de versión
+git add *
+# Ver los estados de los archivos
+git status
 # Confirmar los cambios de estado
-git commit -m "Commit inicial | Clases 1~5"
+git commit -m "Commit inicial"
 
 # Confirmados de manera local, se puede hacer push hacia un repositorio GitHub
+# Una vez logueados en github.com creamos un nuevo repositorio desde "+" > "New repository"
+# Deberemos darle un nombre, una descripción (opcional), y un nivel de privacidad
+
+# git remote: Administra el conjunto de repositorios ("remotos") cuyas ramas rastrea
+# add <name> <url>: Agregua un nombre remoto <name> para el repositorio en <url>
 git remote add origin https://github.com/lreyes-swdev/FullStack_JAVA-2160.git
-git branch -M main
-git push -u origin main
+# Subimos el repositorio local a github. Por defecto, nuestra rama se nombró Master
+git push -u origin master
 
 # Luego, agregamos un nuevo archivo (por ejemplo index.html en la raíz de nuestro workspace)
 git add .
 git commit -m "agregamos index"
-git push -u origin main
+git push -u origin master
 
 github.com
     Settings >> Page (GitHub Pages) >> Seleccionamos la rama
     Obtenemos un Link para entregar la actividad a través de la Plataforma
     (evitamos copiar y pegar el código de cada archivo a entregar)
+        [Ok] Your site is ready to be published at https://lreyes-swdev.github.io/FullStack_JAVA-2160/
 
 Compartir un repositorio
-    Code >> clone >> copiar y el Link y compartir
+    Code >> clone >> y copiar el Link para compartir
     https://github.com/luisNavasArg/codoacodocomision2160.git
 
 Descargar un repositorio compartido
     git clone https://github.com/luisNavasArg/codoacodocomision2160.git
     (Mas adelante veremos modificarlo y proponer cambios al autor)
 
-# Luego del git clone
-    cd dir_clonado
-    git init
-    git add .
-    git commit -m "add directorio clonado"
-    git push -u origin main
+# Para guardar trazabiliad de los cambios:
+# - descargo el repositorio en la carpeta de la calse: <...>\meet.google.com\clase 05
+cd "<...>\meet.google.com\clase 05"
+# Clono el repositorio
+git clone https://github.com/luisNavasArg/codoacodocomision2160.git
+# y copio el contenido clonado (sin la carpeta .git) a mi repositorio local
+# de esta manera tengo el estado inicial de la clase guardado
+# y voy haciendo push con los cambios en mi github
+
+# Luego agregar los archuvos del git clone
+git status
+git add *
+git commit -m "Inicio Clase 5"
+git push -u origin master
     </pre>
 </body>
 
