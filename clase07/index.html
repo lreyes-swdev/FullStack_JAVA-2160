@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 7</title>
+</head>
+
+<body>
+    <p><a href="codoacodocomision2160">Resultado final de la Clase 7</a></p>
+    <h2>Agrupamientos, Fuentes y Google Fonts</h2>
+    <pre>
+# De ahora en adelante, trabajamos en el repositorio Fork codoacodocomision2160
+# Repositorio PROFE:  https://github.com/luisNavasArg/codoacodocomision2160.git
+# Repositorio FORK:  https://github.com/lreyes-swdev/codoacodocomision2160.git
+
+# Durante la clase...
+cd "C:\workspace\Repositorios\codoacodocomision2160"
+git status
+git add *
+git commit -m "Commit X Clase N"
+git push -u origin master
+
+# Al finalizar la clase actualizo mi repositorio general
+cd "C:\workspace\FullStack_JAVA#2160"
+git status
+git add *
+git commit -m "Fin Clase N"
+git push -u origin master
+
+# BoxModel
+# El modelo de caja CSS es esencialmente una caja que envuelve cada elemento HTML.
+# Consiste en: márgenes, bordes y contenido.
+.box_model {
+    margin: 20px;
+    border: 15px solid green;
+    padding: 50px;
+    /* Estilos para evidenciar el BoxModel */
+    width: 300px;
+    text-shadow: 2px 2px 5px greenyellow;
+    background-color: lightgrey;
+    outline-color: forestgreen;
+    outline-style: outset;
+}
+
+#
+# Flex
+#
+# La propiedad CSS flex es una propiedad resumida que indica la capacidad de un elemento flexible
+# para alterar sus dimensiones y llenar el espacio disponible.
+# Los elementos flexibles pueden ser estirados para utilizar el espacio disponible
+# proporcional a su factor de crecimiento flexible o su factor de contracción flexible para evitar desbordamiento.
+#
+# Un CONTENEDOR FLEXIBLE es la caja generada por un elemento con display: flex or inline-flex.
+# Los elementos secundarios se denominan ELEMENTOS FLEXIBLES y se distribuyen utilizando el modelo de distribución flexible.
+< div class="flex-container">
+    < div class="flex-item">flex item 1< /div>
+    < div class="flex-item">flex item 2< /div>
+    < div class="flex-item">flex item 3< /div>
+< /div>
+.flex-container {
+    display: flex | inline-flex;
+    flex-direction: row | row-reverse | column | column-reverse;
+    flex-wrap: nowrap | wrap | wrap-reverse;
+    justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | ... ;
+    align-items: flex-start | flex-end | center | baseline | stretch | ... ;
+    align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | baseline | ... ;
+}
+.flex-item {
+    align-self: auto | flex-start | flex-end | center | baseline | stretch;
+    order: 5;                /* default 0    */
+    flex-grow: 4;            /* default 0    */
+    flex-shrink: 3;          /* default 1    */
+    flex-basis: 10% | auto;  /* default auto */
+    flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+}
+
+#
+# Google Fonts
+#
+https://fonts.google.com/
+# Use on the web.
+# # < link> method  | To embed a font, copy the code into the < head> of your html
+< link rel="preconnect" href="https://fonts.googleapis.com">
+< link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+< link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap" rel="stylesheet">
+# # @import method  | To embed a font, copy the code into the < head> of your html
+< style>
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap');
+< /style>
+# # Download method  | To embed a font, copy the code into the < head> of your html
+< link rel="stylesheet" href="./fonts/KaiseiHarunoUmi-Regular.ttf">
+# # CSS rules to specify families
+element { 
+    font-family: 'Kaisei HarunoUmi', serif;
+}
+
+#
+# Google Material Icons
+#
+https://fonts.google.com/icons 
+    </pre>
+</body>
+
+</html>
