@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Actividad obligatoria 1</title>
+    <style>
+        #_form {
+            text-align: center;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>HTML Actividad obligatoria 1</h2>
+
+    <h3>Formulario DNI-Usuario-Clave</h3>
+    <p>Escribir el código HTML correspondiente a la creación de un formulario web que solicite:
+    <ul>
+        <li>DNI</li>
+        <li>Usuario</li>
+        <li>Clave</li>
+    </ul>
+    </p>
+    <hr><br>
+
+    <form action="404.html" method="post" target="_blank" autocomplete="off" id="_form">
+        <fieldset>
+            <legend>ACCESO AL SISTEMA</legend>
+            <br>
+            <label for="dni">DNI: </label>
+            <input type="text" id="dni" name="_dni" value="">
+            <br><br>
+            <label for="usuario">Usuario: </label>
+            <input type="text" id="usuario" name="_usuario" value="">
+            <br><br>
+            <label for="clave">Clave: </label>
+            <input type="password" id="clave" name="_clave" value="">
+            <br><br>
+            <input type="submit" value="Ingresar">
+            <input type="reset" value="Resetear">
+            <br>
+        </fieldset>
+    </form>
+
+    <br><hr>
+    <p>El elemento HTML &lt;form&gt; representa una sección de documento que contiene controles interactivos
+        que permiten al usuario enviar información a un servidor web. Se definen los atributos utilizados en esta
+        actividad:
+    <ul>
+        <li><b>action</b><br>
+            La URI de un programa que procesa la información enviada por medio del formulario.</li><br>
+        <li><b>method</b><br>
+            El método HTTP que el navegador usa para enviar el formulario. Valores:<br>
+            <i>post</i>: Corresponde al método POST HTTP. Los datos del formulario son incluidos
+            en el cuerpo del formulario y son enviados al servidor.<br>
+            <i>get</i>: Corresponde al método GET HTTP. Los datos del formulario son adjuntados
+            a la URI del atributo action, con un '?' como separador, y la URI resultante es enviada al servidor.
+        </li><br>
+        <li><b>target</b><br>
+            Indica donde mostrar la respuesta que es recibida después de enviar el formulario.
+            En HTML5, es una palabra clave para un contexto de navegación. Valores:<br>
+            <i>_self</i>: Carga la respuesta dentro del mismo contexto de navegación.<br>
+            <i>_blank</i>: Carga la respuesta dentro de un nuevo contexto de navegación.<br>
+            <i>_parent</i>: Carga la respuesta en el contexto de navegación padre del marco actual.<br>
+            <i>_top</i>: arga la respuesta en el contexto de navegación de más alto nivel.
+        </li><br>
+        <li>
+            <b>autocomplete</b><br>
+            Indica si los controles del formulario puede ser automáticamente completados por el navegador. Valores:<br>
+            <i>off</i>: El usuario debe ingresar explicitamente cada valor dentro de cada campo por cada uso; el
+            navegador no autocompleta las entradas.<br>
+            <i>on</i>: El navegador puede completar automáticamente valores basados en lo que el usuario ha ingresado
+            durante entradas previas al formulario.
+        </li>
+    </ul>
+    </p>
+</body>
+
+</html>
