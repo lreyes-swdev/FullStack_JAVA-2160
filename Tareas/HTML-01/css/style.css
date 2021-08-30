@@ -1,0 +1,14 @@
+caption {
+    font-style: italic;
+}
+
+table, th, tr, td{
+    margin: 2px;
+    padding: 5px;
+    border: 1px solid #000;
+}
+
+tfoot {
+    font-style: italic;
+    text-align: right;
+}
