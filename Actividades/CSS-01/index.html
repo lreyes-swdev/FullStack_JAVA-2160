@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CSS Actividad obligatoria 1</title>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-item uno">uno</div>
+        <div class="flex-item dos">dos</div>
+        <div class="flex-item uno">tres</div>
+        <div class="flex-item uno">cuatro</div>
+    </div>
+
+    <br><hr>
+    <h2>CSS Actividad obligatoria 1</h2>
+    <h3>Grupos separados</h3>
+    <p>Escribir el código HTML y el código CSS para crear una página web con el aspecto propuesto por la actividad</p>
+    
+    <!--Teoría-->
+<pre>
+#
+# Flex
+#
+# La propiedad CSS flex es una propiedad resumida
+# que indica la capacidad flexible de un elemento
+# para alterar sus dimensiones y llenar el espacio disponible.
+#
+# Los elementos flexibles pueden ser estirados
+# para utilizar el espacio disponible proporcional a su factor de crecimiento flexible
+# o su factor de contracción flexible para evitar desbordamiento.
+#
+# Un CONTENEDOR FLEXIBLE es la caja generada por un elemento con display: flex or inline-flex.
+# Los elementos secundarios se denominan ELEMENTOS FLEXIBLES y se distribuyen utilizando el modelo de distribución flexible.
+
+&lt;div class="flex-container"&gt;
+    &lt;div class="flex-item"&gt;flex item 1&lt;/div&gt;
+    &lt;div class="flex-item"&gt;flex item 2&lt;/div&gt;
+    &lt;div class="flex-item"&gt;flex item 3&lt;/div&gt;
+&lt;/div&gt;
+
+.flex-container {
+    display: flex | inline-flex;
+    flex-direction: row | row-reverse | column | column-reverse;
+    flex-wrap: nowrap | wrap | wrap-reverse;
+    justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | ... ;
+    align-items: flex-start | flex-end | center | baseline | stretch | ... ;
+    align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | baseline | ... ;
+}
+
+.flex-item {
+    align-self: auto | flex-start | flex-end | center | baseline | stretch;
+    order: n;                /* default 0    */
+    flex-grow: n;            /* default 0    */
+    flex-shrink: n;          /* default 1    */
+    flex-basis: 10% | auto;  /* default auto */
+    flex: none | [ &lt;'flex-grow'&gt; &lt;'flex-shrink'&gt;? || &lt;'flex-basis'&gt; ]
+}
+</pre>
+</body>
+
+</html>

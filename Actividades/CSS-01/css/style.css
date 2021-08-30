@@ -1,0 +1,24 @@
+.flex-container {
+    width: 93%;
+    height: 300px;
+    margin-top: 22px;
+    margin-left: 16px;
+	display: flex;
+    justify-content: space-between;
+}
+
+.flex-item {
+    width: 24%;
+    height: 100%;
+    font-size: 50px;
+}
+
+.uno {
+    color: yellow;
+    background-color: red;
+}
+
+.dos {
+    color: white;
+    background-color: black;
+}
