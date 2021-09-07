@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 11</title>
+</head>
+
+<body>
+    <p><a href="codoacodocomision2160">Resultado final de la Clase 11</a></p>
+    <h2>Iconos y Animaciones con CSS</h2>
+    <pre>
+# Continuamos trabajamos en el repositorio Fork codoacodocomision2160
+# Repositorio PROFE:  https://github.com/luisNavasArg/codoacodocomision2160.git
+# Repositorio FORK:  https://github.com/lreyes-swdev/codoacodocomision2160.git
+
+# Durante la clase...
+cd "C:\workspace\Repositorios\codoacodocomision2160"
+git status
+git add *
+git commit -m "Iconos y Animaciones con CSS"
+git push -u origin master
+
+# Al finalizar la clase actualizo mi repositorio general
+cd "C:\workspace\FullStack_JAVA#2160"
+git status
+git add *
+git commit -m "Fin Clase 11"
+git push -u origin master
+
+#
+# Servidor FTP:
+# serv: ftp.foxit.com.ar
+# user: c2160@cursophp.foxit.com.ar
+# pass: 7q-wK2=zEa1F
+# port: 21
+
+#
+# fontawesome.com
+< head>
+    < script src="https://kit.fontawesome.com/8a7b1fbaea.js" crossorigin="anonymous">< /script>
+< /head>
+< body>
+    < i id="flecha" class="fas fa-arrow-down fa-10x fa-spin">< /i>
+    < i class="fas fa-spinner fa-spin">< /i>
+< /body>
+
+#
+# Animaciones en CSS con @keyframes
+
+# @keyframes  ::  from + to
+#flecha {
+    color: brown;
+    animation-name: flecha;
+    animation-duration: 6s;
+    animation-iteration-count: 2;
+    animation-direction: reverse;
+    animation-delay: 4s;
+    position: absolute;
+    left: 250px;
+}
+
+@keyframes flecha {
+    from {
+        color: blue;
+        top: 250px;
+    }
+    to {
+        color: brown;
+        top: 50px;
+    }
+}
+
+# @keyframes  ::  % + % + % + %
+#uno, #tres {
+    background-color: black;
+    color: white;
+    position: relative;
+    top: 0px;
+    animation-name: mover;
+    animation-duration: 5s;
+}
+
+@keyframes mover {
+    25% {
+        top: 200px;
+        left: 0px;
+    }
+    50% {
+        left: 220px;
+    }
+    75% {
+        top: 0px;
+    }
+    100% {
+        left: 20px;
+    }
+}
+
+#
+# animate.style
+< head>
+    < link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+< /head>
+< body>
+    < h1 class="animate__animated animate__flipInY">Animaciones e Iconos< /h1>
+< /body>
+    </pre>
+</body>
+
+</html>
