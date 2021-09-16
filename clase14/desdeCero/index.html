@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Hola Bootstrap</title>
+</head>
+
+<body>
+    <!-- <h1>Hola mundo</h1>
+    <h1>Bienvenidos c2160 c2164 y amigos</h1>
+    <h2>Grilla de Bootstrap 🚨</h2> -->
+
+    <!--Inicio de navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo_final.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--Fin de navbar-->
+
+    <!--Inicio Carousel-->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/hack1.jpg" class="d-block w-100" alt="Imagen 1">
+            </div>
+            <div class="carousel-item">
+                <img src="img/hack2.jpg" class="d-block w-100" alt="Imagen 2">
+            </div>
+            <div class="carousel-item">
+                <img src="img/hack3.jpg" class="d-block w-100" alt="Imagen 3">
+            </div>
+            <div class="carousel-item">
+                <img src="img/hack4.jpg" class="d-block w-100" alt="Imagen 4">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--Fin Carousel-->
+
+
+    <div class="container">
+        <!--Inicio Cards-->
+        <div class="card-group">
+            <div class="card">
+                <img src="img/bill.jpg" class="card-img-top" alt="Bill Gates">
+                <div class="card-body">
+                    <h5 class="card-title">Bill Gates</h5>
+                    <span class="badge rounded-pill bg-danger">HTML</span>
+                    <span class="badge rounded-pill bg-warning text-dark">CSS</span>
+                    <span class="badge rounded-pill bg-info text-dark">JavaScript</span>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional
+                        content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/steve.jpg" class="card-img-top" alt="Steve Jobs">
+                <div class="card-body">
+                    <h5 class="card-title">Steve Jobs</h5>
+                    <div class="spinner-border text-secondary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
+                    </p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/ada.jpeg" class="card-img-top" alt="Ada">
+                <div class="card-body">
+                    <h5 class="card-title">Ada</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional
+                        content. This card has even longer content than the first to show that equal height action.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+        <!--Fin Cards-->
+    </div>
+
+    <!--Inicio Form-->
+    <div class="container">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Correo</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com.ar">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-3">Enviar</button>
+        </div>
+    </div>
+    <!--Fin Form-->
+
+    <!--Inicio Footer-->
+    <footer>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col">
+                    <p>Quiénes somos?</p>
+                </div>
+                <div class="col">
+                    <p>Diseñado por...</p>
+                </div>
+                <div class="col">
+                    <p>Contacto: 555-555</p>
+                </div>
+                <div class="col">
+                    <p>Conferencias</p>
+                </div>
+                <div class="col">
+                    <p>Estudiantes</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Fin Footer-->
+
+    <!-- Grilla, se comprende de 12 "espacios"-->
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col" style="background-color: darkseagreen;">
+                <p>hola soy una grilla real 🙄</p>
+            </div>
+            <div class="col" style="background-color: rebeccapurple;">
+                <p>hola soy una grilla real 😄</p>
+            </div>
+            <div class="col" style="background-color: pink;">
+                <p>hola soy una grilla real 😴</p>
+            </div>
+            <div class="col" style="background-color: silver;">
+                <p>hola soy una grilla real 🥴</p>
+            </div>
+            <div class="col" style="background-color: tomato;">
+                <p>hola soy una grilla real 🤩</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4" style="background-color: violet;">
+                <p>esto es otra fila 😱</p>
+            </div>
+            <div class="col-4" style="background-color: yellowgreen;">
+                <p>esto es otra fila 😨</p>
+            </div>
+            <div class="col-2" style="background-color: seagreen;">
+                <p>esto es otra fila 💀</p>
+            </div>
+            <div class="col-4" style="background-color: royalblue;">
+                <p>esto es otra fila 😭</p>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
