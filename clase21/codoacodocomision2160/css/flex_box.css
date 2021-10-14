@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+.principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: flex-end;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly;
+}
+
+.cuadro {
+    background-color: blueviolet;
+    width: 20%;
+    /* 
+    height: 200px;
+    float: left;
+    border: 80px solid tomato;
+    box-sizing: border-box; 
+    */
+    overflow: auto;
+}
+
+.cuadro p {
+    font-size: x-large;
+}
+
+.cuadro p::before {
+    content: 'A mi no me puedes copiar';
+}
+
+.cuadro p::after {
+    content: 'A mi tampoco';
+}
+
+.cuadro p::first-letter {
+    color: white;
+    background-color: black;
+    padding: 2px;
+}
+
+footer {
+    background-color: gray;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    color: white;
+}
+
+.letra {
+    font-family: 'Azeret Mono', monospace;
+}
