@@ -1,4 +1,0 @@
-https://getbootstrap.com/docs/5.1/getting-started/introduction/
-
-# Clase 20 - Código js
-https://pastebin.com/M1j3924U
