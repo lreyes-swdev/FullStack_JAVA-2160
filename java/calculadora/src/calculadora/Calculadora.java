@@ -14,7 +14,7 @@ public class Calculadora {
         System.out.println("Ingrese la operación a realizar: '+' '-' '*' '/'");
         String op = entrada.next();
         Operaciones operacion = new Operaciones(num, num2, op);
-        System.out.println("El Restultado de la operacion es: \n" + operacion.operacion());
+        System.out.println("El Restultado de la operacion es: \n"
+                + operacion.operacion());
     }
-
 }
