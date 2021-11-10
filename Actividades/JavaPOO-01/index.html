@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Java/POO Actividad Unidad 2</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <h1>Java/POO</h1>
+    <h2>Actividad Obligatoria Unidad 2</h2>
+
+    <p>Se creó un nuevo proyecto para desarrollar la actividad</p>
+    <img src="img/img01.png" alt="Nuevo proyecto">
+
+    <p>Se seleccionó la categoría 'Java with Ant' y el tipo de proyecto 'Java Application'</p>
+    <img src="img/img02.png" alt="Categoría y Tipo de proyecto">
+
+    <p>Se dió nombre y locación al proyecto</p>
+    <img src="img/img03.png" alt="Nombre y Locación al proyecto">
+
+    <p>Se obtuvo el siguiente resuultado</p>
+    <img src="img/img04.png" alt="Resultado">
+
+    <h2>Archivos Fuentes</h2>
+    <a href="zip/actividadunidad2.zip" target="_blank" download>Descargar Archivos Fuentes</a>
+    <pre>
+public class ActividadUnidad2 {
+
+    public static void main(String[] args) {
+        Usuario usuario = new Usuario();
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Ingrese su nombre:");
+        usuario.setNombre(sc.nextLine());
+
+        System.out.println("Ingrese su apellido:");
+        usuario.setApellido(sc.nextLine());
+
+        System.out.println("Ingrese su edad:");
+        usuario.setEdad(sc.nextInt());
+        sc.nextLine(); //se limpia '\n' que pLeaermanece en el buffer de entrada
+
+        System.out.println("Ingrese su hobbie:");
+        usuario.setHobbie(sc.nextLine());
+
+        System.out.println("Ingrese su editor de código preferido:");
+        usuario.setEditorCódigoPreferido(sc.nextLine());
+
+        System.out.println("Ingrese el sistema operativo que utiliza:");
+        usuario.setSistemaOperativo(sc.nextLine());
+
+        System.out.println("\n" + usuario.mostrarDatos());
+    }
+
+}
+
+public class Usuario {
+
+    private String nombre, apellido, hobbie, editorCódigoPreferido, sistemaOperativo;
+    private int edad;
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public void setHobbie(String hobbie) {
+        this.hobbie = hobbie;
+    }
+
+    public void setEditorCódigoPreferido(String editorCódigoPreferido) {
+        this.editorCódigoPreferido = editorCódigoPreferido;
+    }
+
+    public void setSistemaOperativo(String sistemaOperativo) {
+        this.sistemaOperativo = sistemaOperativo;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public String mostrarDatos() {
+        return "Datos del usuario: \n-Nombre: " + nombre + "\n-Apellido: " + apellido
+                + "\n-Edad: " + edad + "\n-Hobbie: " + hobbie
+                + "\n-Editor de código preferido: " + editorCódigoPreferido
+                + "\n-Sistema Operativo que utiliza: " + sistemaOperativo;
+    }
+
+}
+    </pre>
+</body>
+
+</html>
