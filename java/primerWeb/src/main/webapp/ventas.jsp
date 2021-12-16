@@ -12,17 +12,19 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <%! int num=3; double num2=30.3;
-        double suma() {
-            return num+num2;
-        }
+        <%! int num = 3;
+            double num2 = 30.3;
+
+            double suma() {
+                return num + num2;
+            }
         %>
         <%
             String nombre = "Leand";
             String usuario = request.getParameter("usuario");
-            
-            out.println("<p>"+num+"</p>");
-            out.println("<p>"+suma()+"</p>");
+
+            out.println("<p>" + num + "</p>");
+            out.println("<p>" + suma() + "</p>");
         %>
         <h1>Hello <%=nombre%> con <%=usuario%></h1>
         <p><%java.util.Date fecha = new java.util.Date();%><%=fecha%><i> timestamp</i></p>
