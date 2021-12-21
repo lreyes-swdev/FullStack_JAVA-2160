@@ -10,10 +10,16 @@ public class Conexion {
         Connection connection = null;
         try {
             Class.forName(driver);
+            /*
             connection = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/lreyes-comision2160",
+                    "jdbc:mysql://localhost:3306/comision2160",
                     "lreyes_db",
                     "lreyes_db");
+            */
+            connection = DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3306/lreyes-comision2160",
+                    "root",
+                    "");
         } catch (ClassNotFoundException | SQLException e) {
             System.out.println(e.toString());
         }
