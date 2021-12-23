@@ -16,38 +16,30 @@
             <div class="row">
                 <a class="btn btn-primary w-25 my-3"
                    href="OradoresController?accion=nuevo">Agregar Orador</a>
-                <table class="table table-primary">
-                    <thead>
-                        <th>Id</th>
-                        <th>Nombre</th>
-                        <th>Apellido</th>
-                        <th>Tema</th>
-                        <th>Modificar</th>
-                        <th>Eliminar</th>
-                    </thead>
-                    <tbody>
-                        <%
-                            List<Oradores> resultado = null;
-                            OradoresDAO orador = new OradoresDAO();
-                            resultado = orador.listarOradores();
-                            
-                            for(int x=0; x < resultado.size(); ++x) {
-                                String rutaM = "OradoresController?accion=modificar&id="+resultado.get(x).getId();
-                                String rutaE = "OradoresController?accion=eliminar&id="+resultado.get(x).getId();
-                        %>
-                            <tr>
-                                <td><%= resultado.get(x).getId()%></td>
-                                <td><%= resultado.get(x).getNombre()%></td>
-                                <td><%= resultado.get(x).getApellido()%></td>
-                                <td><%= resultado.get(x).getTema()%></td>
-                                <td><a class="text-success" href="<%= rutaM%>">X</a></td>
-                                <td><a class="text-danger" href="<%= rutaE%>">X</a></td>
-                            </tr>
-                        <%
-                            }
-                        %>
-                    </tbody>
-                </table>
+
+                <%
+                    List<Oradores> resultado = null;
+                    OradoresDAO orador = new OradoresDAO();
+                    resultado = orador.listarOradores();
+
+                    for (int x = 0; x < resultado.size(); ++x) {
+                        String rutaM = "OradoresController?accion=modificar&id=" + resultado.get(x).getId();
+                        String rutaE = "OradoresController?accion=eliminar&id=" + resultado.get(x).getId();
+                %>
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="card-body">
+                            <h5 class="card-title d-inline"><%= resultado.get(x).getNombre()%> <%= resultado.get(x).getApellido()%></h5>
+                            <a href="<%= rutaE%>"><span class="float-end mx-1 badge bg-danger">Eliminar</span></a>
+                            <a href="<%= rutaM%>"><span class="float-end mx-1 badge bg-warning text-dark">Modificar</span></a>
+                            <p class="card-text"><small class="text-muted"><%= resultado.get(x).getTema()%></small></p>                            
+                        </div>
+                    </div>
+                </div>
+                <%
+                    }
+                %>
+
             </div>
         </div>
     </body>

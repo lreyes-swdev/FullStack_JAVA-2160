@@ -1,0 +1,7 @@
+modelo\Oradores.class
+modelo\Alumnos.class
+modelo\OradoresDAO.class
+controlador\OradoresController.class
+controlador\AlumnosController.class
+config\Conexion.class
+modelo\AlumnosDAO.class
